@@ -3,7 +3,6 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import './App.css';
 import {AppBar, Box, Button, Toolbar, Typography}from "@mui/material"
-import Pls from './components/Pls';
 import Noerror from './components/Noerror';
 import { Link, Route, Routes } from 'react-router-dom';
 function App() {
@@ -17,8 +16,7 @@ function App() {
   })
   .catch(err=>console.log(err))
   },[])
-
-
+  
 
   return (
     <><div className="App">
@@ -26,7 +24,7 @@ function App() {
       <AppBar style={{ backgroundColor: 'green' }}>
         <Toolbar>
           <Button color='inherit'><Link to={'/'} style={{ textDecoration: 'none', color: 'white', backgroundColor: 'purple' }}> HOME</Link> </Button>
-          <Button color='inherit'><Link to={'/employee'} style={{ textDecoration: 'none', color: 'white', backgroundColor: 'purple' }}> EMPLOYEE</Link></Button>
+          <Button color='inherit'><Link to={'/employee'} style={{ textDecoration: 'none', color: 'white', backgroundColor: 'purple' }} scroll> EMPLOYEE</Link></Button>
         </Toolbar>
       </AppBar>
       {/* <Pls/>
