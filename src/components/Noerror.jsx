@@ -5,8 +5,10 @@ const Noerror = () => {
   return (
     <div style={{paddingTop:'120px'}}>
       <br></br>
-      <TextField label='name'/><br/><br/>
-      <TextField label='place'/><br/><br/>
+      <TextField label='Name'/><br/><br/>
+      <TextField label='Designation'/><br/><br/>
+      <TextField label='Location'/><br/><br/>
+      <TextField label='Salary'/><br/><br/>
       <Button>SUBMIT</Button>
     </div>
   )
